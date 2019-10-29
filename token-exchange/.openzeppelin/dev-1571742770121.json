@@ -1,0 +1,117 @@
+{
+  "contracts": {
+    "TokenExchange": {
+      "address": "0xFC628dd79137395F3C9744e33b1c5DE554D94882",
+      "constructorCode": "60806040523480156100115760006000fd5b50610017565b6104d9806100266000396000f3fe",
+      "bodyBytecodeHash": "5f04ea6dcd6b649de55f82ff59d7f384f3e509303382d137d81b70c0a6db2394",
+      "localBytecodeHash": "40bd16050030ac9da1651d165f0fd7cfe90f4441940f7e05af7be83a4a570ca9",
+      "deployedBytecodeHash": "40bd16050030ac9da1651d165f0fd7cfe90f4441940f7e05af7be83a4a570ca9",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 205,
+          "type": "t_bool",
+          "src": "757:24:2"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 207,
+          "type": "t_bool",
+          "src": "876:25:2"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 263,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:2"
+        },
+        {
+          "contract": "TokenExchange",
+          "path": "contracts/TokenExchange.sol",
+          "label": "rate",
+          "astId": 276,
+          "type": "t_uint256",
+          "src": "469:19:3"
+        },
+        {
+          "contract": "TokenExchange",
+          "path": "contracts/TokenExchange.sol",
+          "label": "token",
+          "astId": 278,
+          "type": "t_address",
+          "src": "492:19:3"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "@openzeppelin/contracts-ethereum-package/StandaloneERC20": [
+      {
+        "address": "0xb09bCc172050fBd4562da8b229Cf3E45Dc3045A6",
+        "version": "2.3.0",
+        "implementation": "0x67B5656d60a809915323Bf2C40A8bEF15A152e3e",
+        "admin": "0x6eD79Aa1c71FD7BdBC515EfdA3Bd4e26394435cC",
+        "kind": "Upgradeable"
+      }
+    ],
+    "token-exchange/TokenExchange": [
+      {
+        "address": "0x5f8e26fAcC23FA4cbd87b8d9Dbbd33D5047abDE1",
+        "version": "1.0.0",
+        "implementation": "0xFC628dd79137395F3C9744e33b1c5DE554D94882",
+        "admin": "0x6eD79Aa1c71FD7BdBC515EfdA3Bd4e26394435cC",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "dependencies": {
+    "@openzeppelin/contracts-ethereum-package": {
+      "package": "0x59d3631c86BbE35EF041872d502F218A39FBa150",
+      "version": "2.3.0",
+      "customDeploy": true
+    }
+  },
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x6eD79Aa1c71FD7BdBC515EfdA3Bd4e26394435cC"
+  }
+}

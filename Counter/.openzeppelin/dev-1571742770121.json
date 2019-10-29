@@ -1,0 +1,54 @@
+{
+  "contracts": {
+    "Counter": {
+      "address": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
+      "constructorCode": "60806040523480156100115760006000fd5b50610017565b60da806100256000396000f3fe",
+      "bodyBytecodeHash": "9af117acfa3ab65e2cf5997ebd610679503548f4530d4fa22421263822dc8691",
+      "localBytecodeHash": "e976ed03b2413a2e36753f1d78471eab4a0ba1e1687f2db761eec37e7da19092",
+      "deployedBytecodeHash": "e976ed03b2413a2e36753f1d78471eab4a0ba1e1687f2db761eec37e7da19092",
+      "types": {
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Counter",
+          "path": "contracts/Counter.sol",
+          "label": "value",
+          "astId": 3,
+          "type": "t_uint256",
+          "src": "46:20:0"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": [],
+        "storageUncheckedVars": [],
+        "storageDiff": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "openzeppelin-sdk-tutorial/Counter": [
+      {
+        "address": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+        "version": "1.0.0",
+        "implementation": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
+        "admin": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24"
+  }
+}
